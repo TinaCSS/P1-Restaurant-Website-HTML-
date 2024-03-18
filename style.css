@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ecceHomo {
+    width: calc(25% -20px);
+    margin: 10px;
+}
+
+img {
+    max-width: 150px;
+}
