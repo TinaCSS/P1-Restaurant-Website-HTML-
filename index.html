@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1: Restaurant Website</title>
+    <link rel="stylesheet" href="restaurant.css">
 </head>
 <body>
-    <header><!-- Navegador-->
-                <img src="./assets/mozzabar-logo.png" alt="mozzabar-logo">
-
-            <nav> <!-- Navegador a páginas--> 
-                    <a href="#home">Home</a>
-                    <a href="#concepto">Concepto</a>
-                    <a href="#fotos">Fotos</a>
-                    <a href="#menu">Menú</a>
-                    <a href="#reservas">Reservas</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contacto">Contacto</a>
+    <header>
+            <img class="logo" src="./assets/mozzabar-logo.png" alt="mozzabar-logo">
+            <nav class="header__nav"> 
+                    <a class="header__nav__item white smaller selected" href="#home">Home</a>
+                    <a class="header__nav__item white smaller" href="#concepto">Concepto</a>
+                    <a class="header__nav__item white smaller" href="#fotos">Fotos</a>
+                    <a class="header__nav__item white smaller" href="#menu">Menú</a>
+                    <a class="header__nav__item white smaller" href="#reservas">Reservas</a>
+                    <a class="header__nav__item white smaller" href="#blog">Blog</a>
+                    <a class="header__nav__item white smaller" href="#contacto">Contacto</a>
             </nav>    
       </header>
       <main>
-        <section id="home"><!-- Landing-->
+        <section class="home"><!-- Landing-->
             <h1>Descubre</h1>
-            <h1><strong><p>Mozzabar</p></strong></h1>
+            <h1 class="strong"><p>Mozzabar</p></h1>
             <h3><p>We are open</p></h3>
         </section>            
-        <section id="concepto"><!-- Concepto-->
+        <section class="concepto"><!-- Concepto-->
             <article>
-                <h3>Concepto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae possimus fuga iusto est. Magni, minima fuga! Voluptate, temporibus, autem voluptatem dolorem quaerat aliquam nam, fugit qui fuga repudiandae assumenda.</p>
+                <img class="spinach" src="https://pngimg.com/d/spinach_PNG55.png" alt="spinach leave">
+                <div class="box">
+                    <div class="box__text">
+                        <h3 class="white">Concepto</h3>
+                        <p class="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae possimus fuga iusto est. Magni, minima fuga! Voluptate, temporibus, autem voluptatem dolorem quaerat aliquam nam, fugit qui fuga repudiandae assumenda.</p>
+                    </div>
+                </div>
             </article>
         </section>
-        <section id="fotos"><!-- Screen collage-->
+        <section class="fotos">
+            <div class="fotos-table"><!-- Screen collage-->
                 <table>
                    <tbody> <!-- body de la tabla -->
                      <tr> <!-- body de la fila 1-->
@@ -44,18 +50,14 @@
                         <td><img src="./assets/tabla-collage-fila2-columna2.png" alt="cervezas-y-tarta-de-chocolate-casera"></td>
                         <td><img src="./assets/tabla-collage-fila2-columna3.png" alt="estanteria-decoracion"></td>
                      </tr>
-                     <tr><!-- body de la fila 3-->
-                        <td></td>
-                        <td><img src="./assets/tabla-collage-fila3-columna2.png" alt="estanteria-decoracion"></td>
-                        <td></td>
-                     </tr>
                    </tbody>
                  </table>
+            </div>
             <img src="/Users/cristinaciacolomins/Desktop/FULL STACK/htmlcss/html homework/P1 Restaurant Website (HTML)/assets/tropical-texture-background-collage.jpeg">
         </section>
-        <section id="menu">
+        <section class="menu">
             <h3>Carta</h3>
-            <section id="desayunos">
+            <section class="desayunos">
                 <h4>Desayunos</h4>
                 <section id="desayunosDulces">
                     <h3>Dulces</h3>
